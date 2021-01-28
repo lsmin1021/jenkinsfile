@@ -28,7 +28,7 @@ pipeline{
                 steps{
                     sh 'rm -f *.jar'
                     sh '''cd build/libs/
-mv *.jar ~/workspace/cicd-test2/'''
+                        mv *.jar ~/workspace/cicd-test2/'''
                 }
             }
             stage('Deploy'){
